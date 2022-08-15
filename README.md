@@ -1,34 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CODE ESI Admin Dashboard
 
-## Getting Started
+## About the project
 
-First, run the development server:
+This is the dashboard admin app to manage [codeesi.com](https://codeesi.com) data using [CODE ESI GRAPHQL API](https://github.com/AhmedCoolProjects/CodeESIGraphqlAPI)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Used technical skills
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- ReactJS
+- Next.js
+- GraphQL
+- Apollo Client
+- MUI
+- MUI-Icons
+- TailwindCSS
+- Vercel
+- Figma
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Pages
 
-## Learn More
+![image](https://user-images.githubusercontent.com/72823374/152119732-5b67be98-f4f8-4da3-80c0-144450831113.png)
 
-To learn more about Next.js, take a look at the following resources:
+- **_/myapi/v1/admin:_** Route page for our API
+- **_/myapi/v1/admin/activities:_** Dashboard to visualize activities data and manage it
+- **_/myapi/v1/admin/organizations:_** Dashboard to visualize organizations data and manage it
+- **_/myapi/v1/admin/persons:_** Dashboard to visualize persons data and manage it
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![image](https://user-images.githubusercontent.com/72823374/152119879-a13155b4-f0fd-4fe8-bcad-aa4485ce3447.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Queries -Requesting data from backend API-:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+under `/apollo/graphql/queries.js` our queries objects to request data from the backend API [CODE ESI GRAPHQL API](https://github.com/AhmedCoolProjects/CodeESIGraphqlAPI)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Mutations -CRUD Operations using the backend API-:
+
+under `/apollo/graphql/mutations.js` our mutations objects to add, update and delete data using mutations defined in the backend API [CODE ESI GRAPHQL API](https://github.com/AhmedCoolProjects/CodeESIGraphqlAPI)
+
+![image](https://user-images.githubusercontent.com/72823374/152119959-caf55182-643f-458f-96c9-fb4dad381a6f.png)
+
+![image](https://user-images.githubusercontent.com/72823374/152119968-67b110cb-18d5-464d-9d14-859e390f20dc.png)
+
+
+## Authentication for admin
+
+### Firebase Authentication API
+
+To prevent access to the dashboard admin for everyone.
+
+## Storing files
+
+### Firebase Storage API
+
+to store images in GCP
+
+## Deployement
+
+The Admin Dashboard is deployed on Vercel platform, and it uses its backend API [CODE ESI GRAPHQL API](https://github.com/AhmedCoolProjects/CodeESIGraphqlAPI) to manage data for the frontend [codeesi.com](https://codeesi.com)
+
+## Visit my portfolio
+
+[Ahmed Bargady](https://ahmedbargady.me)
